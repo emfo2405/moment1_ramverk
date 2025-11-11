@@ -8,80 +8,52 @@
     <link href="./output.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="bg-stone-200 text-center">
+    <div class="text-5xl text-center m-8 font-mono">
+        CSS-ramverk
+    </div>
+
         <!--Skapa meny-->
-    <div>
-        <a href="/src/index.html">Startsida</a>
-        <a href="/src/tailwind.html">Tailwind</a>
-        <a href="/src/bootstrap.html">Bootstrap</a>
-        <a href="/src/publicering.html">Publicering</a>
+    <div class="bg-stone-400 p-2 text-lg text-center">
+        <a class="m-4 p-2 hover:bg-stone-600 hover:text-gray-50" href="/src/index.html">Startsida</a>
+        <a class="m-4 p-2 hover:bg-stone-600 hover:text-gray-50" href="/src/tailwind.html">Tailwind</a>
+        <a class="m-4 p-2 hover:bg-stone-600 hover:text-gray-50" href="/src/bootstrap.html">Bootstrap</a>
+        <a class="m-4 p-2 hover:bg-stone-600 hover:text-gray-50" href="/src/publicering.html">Publicering</a>
     </div>
 
     <div>
-        <h1>Tailwind</h1>
+        <h1 class="text-center text-4xl p-10">Tailwind</h1>
     </div>
 
-    <div>
-        <h2>Information om ramverket</h2>
+    <div class="mx-auto w-170 bg-new-color p-5 box-border border-4 rounded-xl border-new-border">
+
+        <h2 class="text-3xl">Information om ramverket</h2>
+        <p class="m-3">Tailwind är ett CSS-ramverk som är skapat för att underlätta utvecklingen av webbplatser. Ramverket använder klasser med designval kopplade till sig som sätts på olika HTML-element. Detta gör att man kan skapa designen av hemsidan från HTML-filen och även att den är väldigt anpassningsbar till användarens behov. 
+            Tailwind består av ett flertal olika klasser för saker som färg, storlek, margins med mera så att man kan forma elementen som man vill. Man kan även lägga till egna färger eller typsnitt till Tailwind så att man kan formatera alla element precis som man vill. 
+        </p><br>
+        <a class="text-link-color hover:text-new-border" href="https://tailwindcss.com/">Klicka här för att komma till tailwinds sida.</a><br>
+        <h3 class="text-2xl m-3">Utvärdering</h3>
+        <p>Jag tycker att arbetet med Tailwind har gått bra. Det var enkelt att installera via npm och även enkelt att sätta sig in i. 
+            Jag tycker det blir enkelt att lägga till klasser till HTML-elementen men det blir också lite stökigt om man vill ha många olika designval på samma element.
+         </p>
+        <h4 class="text-xl">Föredelar</h4>
         <p></p>
-        <a href="https://tailwindcss.com/">Länk till ramverk</a>
-        <h3>Utvärdering</h3>
+        <h4 class="text-xl">Nackdelar</h4>
         <p></p>
-        <h4>Föredelar</h4>
-        <p></p>
-        <h4>Nackdelar</h4>
-        <p></p>
+
     </div>
 
-    <div>
-        <table>
-            <tr>
-                <th>Titel</th>
-                <th>Titel</th>
-                <th>Titel</th>
-                <th>Titel</th>
-            </tr>
-            <tr>
-                <td>Data</td>
-                <td>Data</td>
-                <td>Data</td>
-                <td>Data</td>
-            </tr>
-                        <tr>
-                <td>Data</td>
-                <td>Data</td>
-                <td>Data</td>
-                <td>Data</td>
-            </tr>
-                        <tr>
-                <td>Data</td>
-                <td>Data</td>
-                <td>Data</td>
-                <td>Data</td>
-            </tr>
-                        <tr>
-                <td>Data</td>
-                <td>Data</td>
-                <td>Data</td>
-                <td>Data</td>
-            </tr>
-                        <tr>
-                <td>Data</td>
-                <td>Data</td>
-                <td>Data</td>
-                <td>Data</td>
-            </tr>
-        </table>
-    </div>
+
 
     <div>
-        <form>
-            <label for="name">Namn:</label><br>
-            <input type="text" id="name" name="name"><br>
+        <h2 class="text-3xl p-10">Ramverksformulär</h2>
+        <form class="bg-new-color box-border border-4 rounded-xl border-new-border mx-auto w-170 p-5">
+            <label class="m-3" for="name">Namn:</label>
+            <input class="bg-fuchsia-50 border-2 border-new-border rounded-xl" type="text" id="name" name="name" placeholder="  Ditt namn..."><br>
 
             
-            <input type="checkbox" id="check1" name="check1" value="check1">
-            <label for="check">Checkbox 1:</label><br>
+            <input  type="checkbox" id="check1" name="check1" value="check1">
+            <label  for="check">Checkbox 1:</label>
             <input type="checkbox" id="check2" name="check2" value="check2">
             <label for="check">Checkbox 2:</label><br>
 
@@ -97,11 +69,58 @@
             <label for="message">Meddelande:</label><br>
             <textarea id="message" name="message" placeholder="Skriv ditt meddelande här..."></textarea><br>
 
-            <input type="submit" value="submit">
+            <input class="bg-fuchsia-50 p-3 border-new-border border-2 rounded-xl" type="submit" value="submit">
         </form>
     </div>
 
-        <footer>
+        <div>
+        <table class="table-auto mx-auto border-separate border-4 border-new-border border-spacing-0.5 w-180 m-15">
+            <tr>
+                <th class="border-2 border-new-border p-3">Namn</th>
+                <th class="border-2 border-new-border p-3">Använda ramverk</th>
+                <th class="border-2 border-new-border p-3">Favoritramverk</th>
+                <th class="border-2 border-new-border p-3">Betyg</th>
+                <th class="border-2 border-new-border p-3">Kommentarer</th>
+            </tr>
+            <tr>
+                <td class="border-2 border-new-border p-3">Sara</td>
+                <td class="border-2 border-new-border p-3">Bootstrap, Tailwind</td>
+                <td class="border-2 border-new-border p-3">Tailwind</td>
+                <td class="border-2 border-new-border p-3">8</td>
+                <td class="border-2 border-new-border p-3">-</td>
+            </tr>
+                        <tr>
+                <td class="border-2 border-new-border p-3">Alva</td>
+                <td class="border-2 border-new-border p-3">Milligram, Tailwind</td>
+                <td class="border-2 border-new-border p-3">Milligram</td>
+                <td class="border-2 border-new-border p-3">7</td>
+                <td class="border-2 border-new-border p-3">-</td>
+            </tr>
+                        <tr>
+                <td class="border-2 border-new-border p-3">Maj</td>
+                <td class="border-2 border-new-border p-3">Foundation, Bootstrap</td>
+                <td class="border-2 border-new-border p-3">Bootstrap</td>
+                <td class="border-2 border-new-border p-3">9</td>
+                <td class="border-2 border-new-border p-3">-</td>
+            </tr>
+                        <tr>
+                <td class="border-2 border-new-border p-3">Lisa</td>
+                <td class="border-2 border-new-border p-3">Foundation, Tailwind</td>
+                <td class="border-2 border-new-border p-3">Tailwind</td>
+                <td class="border-2 border-new-border p-3">7</td>
+                <td class="border-2 border-new-border p-3">-</td>
+            </tr>
+                        <tr>
+                <td class="border-2 border-new-border p-3">Saga</td>
+                <td class="border-2 border-new-border p-3">Tachyons, Foundation</td>
+                <td class="border-2 border-new-border p-3">Foundation</td>
+                <td class="border-2 border-new-border p-3">8</td>
+                <td class="border-2 border-new-border p-3">-</td>
+            </tr>
+        </table>
+    </div>
+
+        <footer class="bg-stone-400 p-3">
         Moment 1 <br> emfo2405
     </footer>
 

@@ -1,1 +1,8 @@
 @import "tailwindcss";
+
+@theme {
+    --color-new-color: #ccbecb;
+    --color-new-border: #a18f9f;
+    --color-link-color: #635762;
+}
+

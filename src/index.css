@@ -1,0 +1,16 @@
+/*ljus lila #fdf4ff main lila #ccbecb border lila #a18f9f*/
+
+body {
+    background-color: #e7e5e4;
+}
+
+#menu {
+    background-color: #a6a09b;
+    text-align: center;
+    padding: 5px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: black; 
+}
