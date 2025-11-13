@@ -2,15 +2,45 @@
 
 body {
     background-color: #e7e5e4;
+    text-align: center;
+}
+
+#pageTitle {
+    font-family: monospace;
+    font-size: 22px;
+    font-weight: 100;
 }
 
 #menu {
     background-color: #a6a09b;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
 }
 
 #menu a {
     text-decoration: none;
     color: black; 
+    margin: 7px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+#menu a:hover {
+    background-color: #585451;
+    color: white;
+}
+
+.pageContent {
+    background-color: #ccbecb;
+    margin: 0 auto;
+    border: 4px solid #a18f9f;
+    border-radius: 10px;
+    width: 450px;
+    margin-top: 30px;
+}
+
+footer {
+    background-color: #a6a09b;
+    margin-top: 40px;
+    padding: 8px;
 }

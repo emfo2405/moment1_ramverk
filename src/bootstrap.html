@@ -5,26 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moment 1</title>
-
+ <link href="./css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="text-center bg-body-tertiary">
+        <div class="p-4">
+        <h1>CSS-ramverk</h1>
+    </div>
         <!--Skapa meny-->
-    <div>
-        <a href="/src/index.html">Startsida</a>
-        <a href="/src/tailwind.html">Tailwind</a>
-        <a href="/src/bootstrap.html">Bootstrap</a>
-        <a href="/src/publicering.html">Publicering</a>
+    <div class="bg-secondary-subtle fs-6 p-2">
+        <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover p-3" href="/src/index.html">Startsida</a>
+        <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover p-3" href="/src/tailwind.html">Tailwind</a>
+        <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover p-3" href="/src/bootstrap.html">Bootstrap</a>
+        <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover p-3" href="/src/publicering.html">Publicering</a>
     </div>
 
-        <div>
+        <div class="p-4">
         <h1>Bootstrap</h1>
     </div>
 
-    <div>
+    <div class="alert alert-success m-4 col-9 col-lg-8 col-xxl-5 mx-auto" style="border: 3px solid #a0b8ad">
         <h2>Information om ramverket</h2>
         <p></p>
-        <a href="https://getbootstrap.com/">Länk till ramverk</a>
+        <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover p-3" href="https://getbootstrap.com/">Länk till ramverk</a>
         <h3>Utvärdering</h3>
         <p></p>
         <h4>Föredelar</h4>
@@ -33,75 +36,93 @@
         <p></p>
     </div>
 
-    <div>
-        <table>
+
+
+    <div class="mt-5">
+        <h2 class="p-1">Ramverksformulär</h2>
+        <form class="form-group col-9 col-lg-8 col-xxl-5  mx-auto alert alert-warning m-5" style="border: 3px solid #d9cda7">
+            <label class="mb-2" for="name">Namn:</label>
+            <input type="text" class="form-control w-50 mx-auto" id="name" name="name"><br>
+
+            <p>Markera de ramverk du har använt:</p>
+            <input type="checkbox" class="form-check-input" id="bootstrap" name="bootstrap" value="bootstrap">
+            <label class="me-3" for="bootstrap">Bootstrap</label>
+            <input type="checkbox" class="form-check-input" id="tailwind" name="tailwind" value="tailwind">
+            <label class="me-3" for="tailwind">Tailwind</label>
+            <input type="checkbox" class="form-check-input" id="milligram" name="milligram" value="milligram">
+            <label class="me-3" for="milligram">Milligram</label>
+            <input type="checkbox" class="form-check-input" id="foundation" name="foundation" value="foundation">
+            <label class="me-3" for="foundation">Foundation</label>
+            <input type="checkbox" class="form-check-input" id="tachyons" name="tachyons" value="tachyons">
+            <label class="me-3" for="tachyons">Tachyons</label>
+            <input type="checkbox" class="form-check-input" id="annat" name="annat" value="annat">
+            <label class="me-3" for="annat">Annat</label><br>
+
+            <label class="mt-4 mb-2" for="select">Välj ditt favoritramverk:</label><br>
+            <select id="select" class="form-control w-50 mx-auto" name="select">
+                <option value="bootstrap">Bootstrap</option>
+                <option value="tailwind">Tailwind</option>
+                <option value="milligram">Milligram</option>
+                <option value="foundation">Foundation</option>
+                <option value="tachyons">Tachyons</option>
+                <option value="annat">Annat (skriv det nedan)</option>
+            </select>
+            
+            <label class="mt-4 mb-2" for="comment">Vid val av annat ramverk eller övriga kommentarer:</label><br>
+            <textarea  class="form-control  w-50 mx-auto"  id="comment" name="comment" placeholder="Skriv din kommentar här..."></textarea><br>
+
+            <input class="btn btn-dark" type="submit" value="Skicka">
+        </form>
+    </div>
+
+        <div class="mx-auto col-9 m-5 col-lg-8 col-xxl-5">
+        <table class="table table-striped table-warning" style="border: 3px solid #d9cda7">
             <tr>
-                <th>Titel</th>
-                <th>Titel</th>
-                <th>Titel</th>
-                <th>Titel</th>
+                <th>Namn</th>
+                <th>Använda ramverk</th>
+                <th>Favorit ramverk</th>
+                <th>Betyg</th>
+                <th>Kommentar</th>
             </tr>
             <tr>
-                <td>Data</td>
-                <td>Data</td>
-                <td>Data</td>
-                <td>Data</td>
+                <td>Sara</td>
+                <td>Bootstrap, Tailwind</td>
+                <td>Tailwind</td>
+                <td>8</td>
+                <td>-</td>
             </tr>
                         <tr>
-                <td>Data</td>
-                <td>Data</td>
-                <td>Data</td>
-                <td>Data</td>
+                <td>Alva</td>
+                <td>Milligram, Tailwind</td>
+                <td>Milligram</td>
+                <td>7</td>
+                <td>-</td>
             </tr>
                         <tr>
-                <td>Data</td>
-                <td>Data</td>
-                <td>Data</td>
-                <td>Data</td>
+                <td>Maj</td>
+                <td>Foundation, Bootstrap</td>
+                <td>Bootstrap</td>
+                <td>9</td>
+                <td>-</td>
             </tr>
                         <tr>
-                <td>Data</td>
-                <td>Data</td>
-                <td>Data</td>
-                <td>Data</td>
+                <td>Lisa</td>
+                <td>Foundation, Tailwind</td>
+                <td>Tailwind</td>
+                <td>7</td>
+                <td>-</td>
             </tr>
                         <tr>
-                <td>Data</td>
-                <td>Data</td>
-                <td>Data</td>
-                <td>Data</td>
+                <td>Saga</td>
+                <td>Tachyons, Foundation</td>
+                <td>Foundation</td>
+                <td>8</td>
+                <td>-</td>
             </tr>
         </table>
     </div>
 
-    <div>
-        <form>
-            <label for="name">Namn:</label><br>
-            <input type="text" id="name" name="name"><br>
-
-            
-            <input type="checkbox" id="check1" name="check1" value="check1">
-            <label for="check">Checkbox 1:</label><br>
-            <input type="checkbox" id="check2" name="check2" value="check2">
-            <label for="check">Checkbox 2:</label><br>
-
-            <label for="select">Välj:</label><br>
-            <select id="select" name="select">
-                <option value="val1">Val1</option>
-                <option value="val2">Val2</option>
-                <option value="val3">Val3</option>
-                <option value="val4">Val4</option>
-                <option value="val5">Val5</option>
-            </select>
-            
-            <label for="message">Meddelande:</label><br>
-            <textarea id="message" name="message" placeholder="Skriv ditt meddelande här..."></textarea><br>
-
-            <input type="submit" value="submit">
-        </form>
-    </div>
-
-        <footer>
+        <footer class="p-3 bg-secondary-subtle mt-5">
         Moment 1 <br> emfo2405
     </footer>
 
