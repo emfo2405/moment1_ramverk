@@ -14,7 +14,8 @@ body {
 #menu {
     background-color: #a6a09b;
     text-align: center;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #menu a {
@@ -37,10 +38,39 @@ body {
     border-radius: 10px;
     width: 450px;
     margin-top: 30px;
+    padding: 20px;
+    
+}
+
+.pageContent p {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: left;
 }
 
 footer {
     background-color: #a6a09b;
     margin-top: 40px;
     padding: 8px;
+}
+
+#mainBtn {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.frameworkBtn {
+    text-decoration: none;
+    color: black;
+    background-color: #fdf4ff;
+    padding: 10px;
+    border: 3px solid #a18f9f;
+    border-radius: 10px;
+}
+
+.frameworkBtn:hover {
+    background-color: #ccbecb;
+    border: 3px solid #fdf4ff;
 }

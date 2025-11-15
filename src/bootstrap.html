@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moment 1</title>
  <link href="./css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 
 <body class="text-center bg-body-tertiary">
@@ -13,12 +14,23 @@
         <h1>CSS-ramverk</h1>
     </div>
         <!--Skapa meny-->
-    <div class="bg-secondary-subtle fs-6 p-2">
+    <div class="bg-secondary-subtle fs-6 p-2 d-md-none">
+        <span class="btn btn-primary dropdown-toggle bg-secondary border-2 border-secondary" type="button" data-bs-toggle="dropdown">Meny</span>
+        <div class="dropdown-menu">
+        <a class="dropdown-item link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover p-3" href="/src/index.html">Startsida</a>
+        <a class="dropdown-item link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover p-3" href="/src/tailwind.html">Tailwind</a>
+        <a class="dropdown-item link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover p-3" href="/src/bootstrap.html">Bootstrap</a>
+        <a class="dropdown-item link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover p-3" href="/src/publicering.html">Publicering</a>
+    </div>
+    </div>
+
+    <div class="bg-secondary-subtle fs-6 p-2 d-md-block d-none ">
         <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover p-3" href="/src/index.html">Startsida</a>
         <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover p-3" href="/src/tailwind.html">Tailwind</a>
         <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover p-3" href="/src/bootstrap.html">Bootstrap</a>
         <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover p-3" href="/src/publicering.html">Publicering</a>
     </div>
+
 
         <div class="p-4">
         <h1>Bootstrap</h1>
@@ -26,14 +38,11 @@
 
     <div class="alert alert-success m-4 col-9 col-lg-8 col-xxl-5 mx-auto" style="border: 3px solid #a0b8ad">
         <h2>Information om ramverket</h2>
-        <p></p>
+        <p>Bootstrap är, likt Tailwind, ett CSS-ramverk som gör att arbetet med designen av HTML-element blir enklare. I Bootstrap används klasser som sätts på HTML-elementen och dessa innehåller då olika kod för CSS-regler. Med ramverket kan man bland annat ändra saker som färger och padding. Bootstrap har även klasser för att designa större komponenter och har därmed mindre flexibilitet i designen. Med de inbyggda designvalen för komponenter kan man exempelvis enkelt göra stilval för en tabell med några få klasser. Bootstrap har också ett antal förvalda färgval vilket ofta gör att webbsidor designade med Bootstrap får ett liknande utseende. </p>
         <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover p-3" href="https://getbootstrap.com/">Länk till ramverk</a>
         <h3>Utvärdering</h3>
-        <p></p>
-        <h4>Föredelar</h4>
-        <p></p>
-        <h4>Nackdelar</h4>
-        <p></p>
+        <p>Jag tycker att arbetet med Bootstrap har gått bra. Installationen tycker jag var lite svårare än för Tailwind men det gick ändå hyfsat lätt. Efter att ha arbetat med Tailwinds klasser blev det ganska naturligt hur man använde klasser även med Bootstrap. Även här var det skönt att det fanns en cheat sheet så att man enkelt kunde hitta rätt klasser för ändamålet. Jag tycker att stilvalen för hela komponenter, så som för tabeller, gjorde att det gick väldigt fort att jobba med Bootstrap men med lite mindre anpassningsmöjligheter om man endast ska hålla sig till de satta klasserna. Sedan la jag till lite CSS själv också för att skapa ramar runt element. Fördelarna jag ser med Bootstrap är att det går snabbt och enkelt att skapa design för hemsidor. Det är även praktiskt att kunna designa större element med väldigt få klasser och väldigt enkelt att kunna anpassa element till olika skärmstorlekar. Nackdelen är att det är lite färre valmöjligheter för design och färg. Även att man behöver upprepa en del kod i filen och att det blir lite rörigt efter ett tag med alla uplacerade klasser. </p>
+
     </div>
 
 
@@ -126,5 +135,6 @@
         Moment 1 <br> emfo2405
     </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

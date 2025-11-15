@@ -33,13 +33,9 @@
         </p><br>
         <a class="text-link-color hover:text-new-border" href="https://tailwindcss.com/">Klicka här för att komma till tailwinds sida.</a><br>
         <h3 class="text-2xl m-3">Utvärdering</h3>
-        <p>Jag tycker att arbetet med Tailwind har gått bra. Det var enkelt att installera via npm och även enkelt att sätta sig in i. 
-            Jag tycker det blir enkelt att lägga till klasser till HTML-elementen men det blir också lite stökigt om man vill ha många olika designval på samma element.
+        <p>Arbetet med Tailwind har gått bra och jag tyckte det var enkelt att både installera via npm och att sätta sig in i. Det blir ett väldigt tydligt system när man lägger till designval i HTML-koden med olika klasser för de val man vill ha. Jag gillar också att det finns cheat sheets för de olika klasserna så att utvecklingen och arbetet går smidigare. De fördelar jag ser med att arbeta med Tailwind som ramverk är att man kan välja designval i HTML-koden och allt är samlat på en plats. Det blir också lätt att anpassa element till olika skärmstorlekar direkt. Jag gillar även att man kan lägga till egna färger m.m. för att anpassa stilval ännu mer till ens egna preferenser. Nackdelen tycker jag är att det blir väldigt mycket kod på en plats och att det blir svårare att hitta specifika delar när man ska gå tillbaka i sin kod och ändra saker. Jag tycker även att det blir en nackdel att man måste upprepa samma koddel för de element som ska ha samma stil som ett annat element. 
          </p>
-        <h4 class="text-xl">Föredelar</h4>
-        <p></p>
-        <h4 class="text-xl">Nackdelar</h4>
-        <p></p>
+        
 
     </div>
 
@@ -47,34 +43,44 @@
 
     <div>
         <h2 class="text-3xl p-10">Ramverksformulär</h2>
-        <form class="bg-new-color box-border border-4 rounded-xl border-new-border mx-auto w-170 p-5">
-            <label class="m-3" for="name">Namn:</label>
-            <input class="bg-fuchsia-50 border-2 border-new-border rounded-xl" type="text" id="name" name="name" placeholder="  Ditt namn..."><br>
+        <form class="bg-new-color box-border border-4 rounded-s border-new-border mx-auto w-3/4 p-5">
+            <label class="m-3" for="name">Namn:</label><br>
+            <input class="bg-fuchsia-50 border-2 border-new-border p-1 w-80 mb-4" type="text" id="name" name="name" placeholder="  Ditt namn..."><br>
 
             
-            <input  type="checkbox" id="check1" name="check1" value="check1">
-            <label  for="check">Checkbox 1:</label>
-            <input type="checkbox" id="check2" name="check2" value="check2">
-            <label for="check">Checkbox 2:</label><br>
+            <p class="mb-2">Markera de ramverk du har använt:</p>
+            <input type="checkbox" id="bootstrap" name="bootstrap" value="bootstrap">
+            <label for="bootstrap">Bootstrap</label>
+            <input type="checkbox" id="tailwind" name="tailwind" value="tailwind">
+            <label for="tailwind">Tailwind</label>
+            <input type="checkbox" id="milligram" name="milligram" value="milligram">
+            <label for="milligram">Milligram</label>
+            <input type="checkbox" id="foundation" name="foundation" value="foundation">
+            <label for="foundation">Foundation</label>
+            <input type="checkbox" id="tachyons" name="tachyons" value="tachyons">
+            <label for="tachyons">Tachyons</label>
+            <input type="checkbox" id="annat" name="annat" value="annat">
+            <label for="annat">Annat</label><br>
 
-            <label for="select">Välj:</label><br>
-            <select id="select" name="select">
-                <option value="val1">Val1</option>
-                <option value="val2">Val2</option>
-                <option value="val3">Val3</option>
-                <option value="val4">Val4</option>
-                <option value="val5">Val5</option>
-            </select>
+            <label class="block mt-4" for="select">Välj ditt favoritramverk:</label>
+            <select class="border-2 border-new-border block mx-auto bg-fuchsia-50 p-2 mt-3 w-80" id="select" name="select"><br>
+                <option value="bootstrap">Bootstrap</option>
+                <option value="tailwind">Tailwind</option>
+                <option value="milligram">Milligram</option>
+                <option value="foundation">Foundation</option>
+                <option value="tachyons">Tachyons</option>
+                <option value="annat">Annat (skriv det nedan)</option>
+            </select><br>
             
-            <label for="message">Meddelande:</label><br>
-            <textarea id="message" name="message" placeholder="Skriv ditt meddelande här..."></textarea><br>
+            <label class="block mb-3" for="comment">Vid val av annat ramverk eller övriga kommentarer:</label>
+            <textarea class="bg-fuchsia-50 p-3 w-80 border-2 border-new-border" id="comment" name="comment" placeholder="Skriv din kommentar här..."></textarea><br>
 
-            <input class="bg-fuchsia-50 p-3 border-new-border border-2 rounded-xl" type="submit" value="submit">
+            <input class="bg-fuchsia-50 p-3 border-new-border border-2 rounded-xl mt-4" type="submit" value="Skicka">
         </form>
     </div>
 
         <div>
-        <table class="table-auto mx-auto border-separate border-4 border-new-border border-spacing-0.5 w-180 m-15">
+        <table class="table-auto mx-auto border-separate border-4 border-new-border border-spacing-0.5 w-3/4 m-15">
             <tr>
                 <th class="border-2 border-new-border p-3">Namn</th>
                 <th class="border-2 border-new-border p-3">Använda ramverk</th>
