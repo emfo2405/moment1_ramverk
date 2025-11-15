@@ -23,7 +23,7 @@
     </div>
 
     <div class="md:hidden">
-        <span id="menuSymbol" class="material-symbols-outlined cursor-pointer">menu</span>
+        <div class="flex items-center p-2 bg-stone-400">Meny<span id="menuSymbol" class="material-symbols-outlined cursor-pointer p-2">menu</span></div>
     <div id="smallMenu" class="bg-stone-400 p-2 text-lg flex flex-col">
         <a class="m-4 p-2 hover:bg-stone-600 hover:text-gray-50" href="/src/index.html">Startsida</a>
         <a class="m-4 p-2 hover:bg-stone-600 hover:text-gray-50" href="/src/tailwind.html">Tailwind</a>
@@ -36,7 +36,7 @@
         <h1 class="text-center text-4xl p-10">Tailwind</h1>
     </div>
 
-    <div class="mx-auto w-170 bg-new-color p-5 box-border border-4 rounded-xl border-new-border">
+    <div class="mx-auto bg-new-color p-5 box-border border-4 rounded-xl border-new-border w-3/4 xl:w-1/2 xl:text-lg">
 
         <h2 class="text-3xl">Information om ramverket</h2>
         <p class="m-3">Tailwind är ett CSS-ramverk som är skapat för att underlätta utvecklingen av webbplatser. Ramverket använder klasser med designval kopplade till sig som sätts på olika HTML-element. Detta gör att man kan skapa designen av hemsidan från HTML-filen och även att den är väldigt anpassningsbar till användarens behov. 
@@ -54,7 +54,7 @@
 
     <div>
         <h2 class="text-3xl p-10">Ramverksformulär</h2>
-        <form class="bg-new-color box-border border-4 rounded-s border-new-border mx-auto w-3/4 p-5">
+        <form class="bg-new-color box-border border-4 rounded-s border-new-border mx-auto p-5 w-3/4 xl:w-1/2 xl:text-lg">
             <label class="m-3" for="name">Namn:</label><br>
             <input class="bg-fuchsia-50 border-2 border-new-border p-1 w-80 mb-4" type="text" id="name" name="name" placeholder="  Ditt namn..."><br>
 
@@ -86,12 +86,12 @@
             <label class="block mb-3" for="comment">Vid val av annat ramverk eller övriga kommentarer:</label>
             <textarea class="bg-fuchsia-50 p-3 w-80 border-2 border-new-border" id="comment" name="comment" placeholder="Skriv din kommentar här..."></textarea><br>
 
-            <input class="bg-fuchsia-50 p-3 border-new-border border-2 rounded-xl mt-4" type="submit" value="Skicka">
+            <input class="bg-fuchsia-50 p-3 border-new-border border-2 rounded-xl mt-4 cursor-pointer" type="submit" value="Skicka">
         </form>
     </div>
 
         <div>
-        <table class="table-auto mx-auto border-separate border-4 border-new-border border-spacing-0.5 w-3/4 m-15">
+        <table class="table-auto mx-auto border-separate border-4 border-new-border border-spacing-0.5 m-15 w-3/4 xl:w-1/2 xl:text-lg">
             <tr>
                 <th class="border-2 border-new-border p-3">Namn</th>
                 <th class="border-2 border-new-border p-3">Använda ramverk</th>
