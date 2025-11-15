@@ -1,4 +1,4 @@
-/*ljus lila #fdf4ff main lila #ccbecb border lila #a18f9f*/
+
 
 body {
     background-color: #e7e5e4;
@@ -11,14 +11,14 @@ body {
     font-weight: 100;
 }
 
-#menu {
+#menu, #smallScreenMenu {
     background-color: #a6a09b;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-#menu a {
+#menu a, #smallScreenMenu a {
     text-decoration: none;
     color: black; 
     margin: 7px;
@@ -26,9 +26,15 @@ body {
     font-size: 20px;
 }
 
-#menu a:hover {
+#menu a:hover, #smallScreenMenu a:hover {
     background-color: #585451;
     color: white;
+}
+
+#smallScreenMenu a {
+    display: block;
+    width: 25%;
+    margin: 0 auto;
 }
 
 .pageContent {
@@ -73,4 +79,52 @@ footer {
 .frameworkBtn:hover {
     background-color: #ccbecb;
     border: 3px solid #fdf4ff;
+}
+
+#menu {
+    display: block;
+}
+
+#hamburgerSymbol {
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    gap: 10px;
+    padding-left: 30px;
+    background-color: #a6a09b;
+    padding: 10px;
+}
+
+    #smallScreenMenu {
+        display: none;
+    }
+
+
+@media (max-width: 640px) {
+    #smallScreenMenu {
+        display: none;
+    }
+
+    #hamburgerSymbol {
+        display: flex;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .pageContent {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1500px) {
+    body {
+        font-size: 20px;
+    }
+
+    .pageContent {
+        width: 600px;
+        font-size: 20px;
+    }
 }
