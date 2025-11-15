@@ -1,5 +1,7 @@
+/*Importerar css från Tailwind*/
 @import "tailwindcss";
 
+/*Egna skapade färger*/
 @theme {
     --color-new-color: #ccbecb;
     --color-new-border: #a18f9f;

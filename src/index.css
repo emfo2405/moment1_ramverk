@@ -1,32 +1,36 @@
-
-
+/*Designval för hela sidan*/
 body {
     background-color: #e7e5e4;
     text-align: center;
 }
 
+/*Design för titel*/
 #pageTitle {
     font-family: monospace;
     font-size: 22px;
     font-weight: 100;
 }
 
-#menu, #smallScreenMenu {
+/*Design för liten och stor meny*/
+#menu,
+#smallScreenMenu {
     background-color: #a6a09b;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-#menu a, #smallScreenMenu a {
+#menu a,
+#smallScreenMenu a {
     text-decoration: none;
-    color: black; 
+    color: black;
     margin: 7px;
     padding: 10px;
     font-size: 20px;
 }
 
-#menu a:hover, #smallScreenMenu a:hover {
+#menu a:hover,
+#smallScreenMenu a:hover {
     background-color: #585451;
     color: white;
 }
@@ -37,6 +41,7 @@ body {
     margin: 0 auto;
 }
 
+/*Design för textinnehåll*/
 .pageContent {
     background-color: #ccbecb;
     margin: 0 auto;
@@ -45,7 +50,7 @@ body {
     width: 450px;
     margin-top: 30px;
     padding: 20px;
-    
+
 }
 
 .pageContent p {
@@ -55,12 +60,14 @@ body {
     text-align: left;
 }
 
+/*Design för footer*/
 footer {
     background-color: #a6a09b;
     margin-top: 40px;
     padding: 8px;
 }
 
+/*Design för knappar*/
 #mainBtn {
     display: flex;
     justify-content: center;
@@ -81,6 +88,7 @@ footer {
     border: 3px solid #fdf4ff;
 }
 
+/*Design för meny och menysymbol*/
 #menu {
     display: block;
 }
@@ -95,11 +103,11 @@ footer {
     padding: 10px;
 }
 
-    #smallScreenMenu {
-        display: none;
-    }
+#smallScreenMenu {
+    display: none;
+}
 
-
+/*Anpassningar för små skärmstorlekar*/
 @media (max-width: 640px) {
     #smallScreenMenu {
         display: none;
@@ -118,6 +126,7 @@ footer {
     }
 }
 
+/*Anpassningar för större skärmstorlekar*/
 @media (min-width: 1500px) {
     body {
         font-size: 20px;
