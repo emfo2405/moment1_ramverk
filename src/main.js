@@ -1,13 +1,25 @@
     let menuSymbol = document.getElementById("menuSymbol");
-
+    let smallMenu = document.getElementById("smallMenu");
 
 function hamburgerMenu() {
-    if(menuSymbol.style.display === "block") {
-        menuSymbol.style.display = "none";
+    smallMenu.classList.toggle("hidden");
+}
+
+menuSymbol.addEventListener("click", hamburgerMenu);
+
+/*    let menuSymbol = document.getElementById("menuSymbol");
+    let smallMenu = document.getElementById("smallMenu");
+
+function hamburgerMenu() {
+    if(smallMenu.style.display === "block") {
+        smallMenu.style.display = "none";
     } else {
-        menuSymbol.style.display = "block";
+        smallMenu.style.display = "block";
     }
 }
 
-menuSymbol.addEventListener("onclick", hamburgerMenu);
+menuSymbol.addEventListener("click", hamburgerMenu); */
+
+
+
 

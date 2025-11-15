@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moment 1</title>
     <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
 </head>
 
 <body class="bg-stone-200 text-center">
@@ -14,11 +15,21 @@
     </div>
 
         <!--Skapa meny-->
-    <div class="bg-stone-400 p-2 text-lg text-center">
+    <div class="bg-stone-400 p-2 text-lg text-center hidden md:block">
         <a class="m-4 p-2 hover:bg-stone-600 hover:text-gray-50" href="/src/index.html">Startsida</a>
         <a class="m-4 p-2 hover:bg-stone-600 hover:text-gray-50" href="/src/tailwind.html">Tailwind</a>
         <a class="m-4 p-2 hover:bg-stone-600 hover:text-gray-50" href="/src/bootstrap.html">Bootstrap</a>
         <a class="m-4 p-2 hover:bg-stone-600 hover:text-gray-50" href="/src/publicering.html">Publicering</a>
+    </div>
+
+    <div class="md:hidden">
+        <span id="menuSymbol" class="material-symbols-outlined cursor-pointer">menu</span>
+    <div id="smallMenu" class="bg-stone-400 p-2 text-lg flex flex-col">
+        <a class="m-4 p-2 hover:bg-stone-600 hover:text-gray-50" href="/src/index.html">Startsida</a>
+        <a class="m-4 p-2 hover:bg-stone-600 hover:text-gray-50" href="/src/tailwind.html">Tailwind</a>
+        <a class="m-4 p-2 hover:bg-stone-600 hover:text-gray-50" href="/src/bootstrap.html">Bootstrap</a>
+        <a class="m-4 p-2 hover:bg-stone-600 hover:text-gray-50" href="/src/publicering.html">Publicering</a>
+    </div>
     </div>
 
     <div>
@@ -130,6 +141,6 @@
         Moment 1 <br> emfo2405
     </footer>
 
-
+<script src="main.js"></script>
 </body>
 </html>

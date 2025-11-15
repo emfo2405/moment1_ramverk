@@ -231,6 +231,9 @@
   .flex {
     display: flex;
   }
+  .hidden {
+    display: none;
+  }
   .table {
     display: table;
   }
@@ -257,8 +260,14 @@
     --tw-border-spacing-y: calc(var(--spacing) * 0.5);
     border-spacing: var(--tw-border-spacing-x) var(--tw-border-spacing-y);
   }
+  .cursor-pointer {
+    cursor: pointer;
+  }
   .flex-col {
     flex-direction: column;
+  }
+  .flex-row {
+    flex-direction: row;
   }
   .rounded-xl {
     border-radius: var(--radius-xl);
@@ -360,6 +369,21 @@
       @media (hover: hover) {
         color: var(--color-new-border);
       }
+    }
+  }
+  .sm\:hidden {
+    @media (width >= 40rem) {
+      display: none;
+    }
+  }
+  .md\:block {
+    @media (width >= 48rem) {
+      display: block;
+    }
+  }
+  .md\:hidden {
+    @media (width >= 48rem) {
+      display: none;
     }
   }
 }
